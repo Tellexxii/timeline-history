@@ -1,11 +1,12 @@
 ﻿export interface TimelineEntity {
+  name: string
   dateSpread: DateSpread;
   color: string
 }
 
 export interface Timeline {
   name: string
-  events: TimelineEntity[]
+  entities: TimelineEntity[]
 }
 
 export interface DateSpread {

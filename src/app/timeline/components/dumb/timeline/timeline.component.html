@@ -1,1 +1,3 @@
-<p>timeline works!</p>
+<div class="timeline" *ngIf="_timeline$ | async as timeline">
+  <app-timeline-entity *ngFor="let entity of timeline.entities" [entity]="entity"></app-timeline-entity>
+</div>
